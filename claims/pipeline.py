@@ -11,13 +11,13 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from datetime import date
-from typing import Dict, List, Optional, Tuple
+from typing import List, Optional, Tuple
 
 from .adjuster import AdjusterQueue
 from .audit import ClaimLedger
-from .extract import ExtractedDoc, extract_document, validate_totals, TotalsCheck
+from .extract import ExtractedDoc, TotalsCheck, extract_document, validate_totals
 from .fraud import FraudAssessment, fraud_score
-from .intake import FNOL, validate_fnol, ValidationResult
+from .intake import FNOL, ValidationResult, validate_fnol
 from .settle import Recommendation, recommend_settlement
 
 

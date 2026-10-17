@@ -9,8 +9,8 @@ All data is synthetic. See docs/fraud-signals.md for the signal catalog.
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from datetime import date, timedelta
-from typing import Dict, List, Optional
+from datetime import date
+from typing import List, Optional
 
 from .intake import FNOL
 
